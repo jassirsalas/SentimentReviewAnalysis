@@ -12,15 +12,17 @@ python app.py
 ```
 The API is listenin in port :5000
 
+You can test it on local via terminal using `curl` or via Postman. For example running the command:
+```
+curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json"  -d '{"comentario":"excelente calidad, muy buen servicio"}'
+```
+
 2. To create the Docker image run the container:
 ```
 docker build -t sentiment-api .
 docker run -d -p 5000:5000  --name my-api sentiment-api
 ```
-You can test it via terminal using `curl` or via Postman. For example:
-```
-curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json"  -d '{"comment":"excelente calidad, muy buen servicio"}'
-```
+
 
 # Structure
 .
@@ -40,4 +42,3 @@ curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json" 
     ├── preprocessing.py
     ├── trained_model.pkl
     └── requirements.txt
-
