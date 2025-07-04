@@ -7,13 +7,15 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction import DictVectorizer
 from preprocessing import PreprocessText
 
+def load_spacy_model(model_name):
+    try:
+        return spacy.load(model_name)
+    except OSError:
+        print(f"model not loaded. downloading model: '{model_name}'...")
+        spacy.cli.download(model_name)
+        return spacy.load(model_name)
 
-try:
-    nlp = spacy.load("es_core_news_sm")
-except OSError:
-    print("El modelo 'es_core_news_sm' de spaCy no está descargado. Por favor, ejecuta:")
-    print("python -m spacy download es_core_news_sm")
-    exit()
+nlp = load_spacy_model("es_core_news_sm")
 
 df = pd.read_csv("./data/dataset.csv")
 
