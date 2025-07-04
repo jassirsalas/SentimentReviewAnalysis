@@ -22,23 +22,3 @@ curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json" 
 docker build -t sentiment-api .
 docker run -d -p 5000:5000  --name my-api sentiment-api
 ```
-
-
-# Structure
-.
-└── SentimentReviewAnalysis/
-    ├── data/
-    │   ├── dataset.csv
-    │   └── testdata.csv
-    ├── notebooks/
-    │   ├── model.ipynb
-    │   ├── ExperimentNotebook.ipynb
-    │   └── model.pkl
-    ├── Dockerfile
-    ├── LICENSE
-    ├── README.md
-    ├── app.py
-    ├── main.py
-    ├── preprocessing.py
-    ├── trained_model.pkl
-    └── requirements.txt
