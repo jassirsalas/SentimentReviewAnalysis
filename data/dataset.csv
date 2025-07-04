@@ -1,0 +1,19 @@
+comentario,sentimiento
+"Me encantó el producto, funciona de maravilla.",positivo
+"El servicio al cliente fue excepcional y muy rápido.",positivo
+"Totalmente recomendado, superó mis expectativas.",positivo
+"La calidad es excelente, volvería a comprar sin dudarlo.",positivo
+"Muy fácil de usar y la interfaz es amigable.",positivo
+"El producto llegó dañado y la caja abierta.",negativo
+"No funciona como se describe en la publicidad.",negativo
+"Una experiencia terrible, no lo recomiendo para nada.",negativo
+"El tiempo de entrega fue demasiado largo, inaceptable.",negativo
+"La calidad es pésima, se rompió al segundo día de uso.",negativo
+"El soporte técnico nunca respondió a mi correo.",negativo
+"Una compra fantástica, estoy muy satisfecho.",positivo
+"Pésimo servicio, el personal fue muy grosero.",negativo
+"El manual de instrucciones es confuso y poco útil.",negativo
+"¡Simplemente perfecto! Justo lo que necesitaba.",positivo
+"La batería dura muy poco, no cumple lo prometido.",negativo
+"Buena relación calidad-precio, lo justo por lo que pagas.",positivo
+"El paquete se perdió y tardaron semanas en resolverlo.",negativo
