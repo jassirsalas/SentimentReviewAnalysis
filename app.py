@@ -21,7 +21,7 @@ def preprocess_text(text):
     text = re.sub(r'[^\w\s]', '', text)
     return text
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predecir', methods=['POST'])
 def predict():
     if not request.is_json:
         return jsonify({"error": "json request needed"}), 400
