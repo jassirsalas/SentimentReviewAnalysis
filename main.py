@@ -1,11 +1,12 @@
-import joblib
 import spacy
+import joblib
 import pandas as pd
+from pathlib import Path
 from nltk.corpus import stopwords
 from sklearn.pipeline import Pipeline
+from preprocessing import PreprocessText
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction import DictVectorizer
-from preprocessing import PreprocessText
 
 def load_spacy_model(model_name):
     try:
@@ -17,7 +18,8 @@ def load_spacy_model(model_name):
 
 nlp = load_spacy_model("es_core_news_sm")
 
-df = pd.read_csv("./data/dataset.csv")
+DATA_PATH = Path('./data/dataset.csv')
+df = pd.read_csv(DATA_PATH)
 
 X = df["comentario"]
 y = df["sentimiento"]

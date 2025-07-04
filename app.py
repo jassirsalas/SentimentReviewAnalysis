@@ -1,12 +1,12 @@
-from flask import Flask, request, jsonify
-import joblib
 import re
 import os
+import joblib
+from pathlib import Path
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-MODEL_PATH = './trained_model.pkl'
-
+MODEL_PATH = Path('./trained_model.pkl')
 
 # load modedel
 try:
