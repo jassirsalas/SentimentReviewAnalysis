@@ -12,6 +12,7 @@ python -m venv api
 This will create an python enviroment called api
 
 Then, execute it. Run the following in the command line:
+
 For Linux:
 ```
 source api/bin/activate
@@ -35,7 +36,8 @@ Now you can run the main code and the API
 
 ## Running the main code
 Locate on the root folder and run:
-1. To train the model and then run the API
+
+To train the model and then run the API
 ```
 python main.py
 python app.py
@@ -47,7 +49,8 @@ You can test it on local via terminal using `curl` or via Postman. For example r
 curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json"  -d '{"comentario":"excelente calidad, muy buen servicio"}'
 ```
 
-2. To create the Docker image run the container:
+# Docker
+To create the Docker image run the container:
 ```
 docker build -t sentiment-api .
 docker run -d -p 5000:5000  --name my-api sentiment-api
