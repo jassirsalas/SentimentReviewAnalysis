@@ -19,7 +19,7 @@ docker run -d -p 5000:5000  --name my-api sentiment-api
 ```
 You can test it via terminal using `curl` or via Postman. For example:
 ```
-curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json"  -d '{"comment":"I love this product"}'
+curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json"  -d '{"comment":"excelente calidad, muy buen servicio"}'
 ```
 
 # Structure
