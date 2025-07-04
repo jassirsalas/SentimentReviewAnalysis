@@ -50,7 +50,7 @@ curl -X POST http://localhost:5000/predecir -H "Content-Type: application/json" 
 ```
 
 # Docker
-To create the Docker image run the container:
+To create the Docker image and run the container:
 ```
 docker build -t sentiment-api .
 docker run -d -p 5000:5000  --name my-api sentiment-api
