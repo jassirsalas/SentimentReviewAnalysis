@@ -1,0 +1,17 @@
+# do not copy the notebooks, innecesary
+notebooks/
+*.ipynb
+
+# i already removed bt just in case
+models/
+
+# env python
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+
+# cache python
+__pycache__/
+*.py[cod]
