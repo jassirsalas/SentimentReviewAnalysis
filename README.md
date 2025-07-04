@@ -4,6 +4,36 @@ In this project I created a sentiment analysis model based on reviews labeled as
 The service is hosted through and API with one endpoint `POST /predecir` which recieves a JSON with the field `comentario`. Th response is the sentiment of the given review.
 
 # How to run
+## Setup
+First let's set the enviroment. In the command line and in the main folder run:
+```
+python -m venv api
+```
+This will create an python enviroment called api
+
+Then, execute it. Run the following in the command line:
+For Linux:
+```
+source api/bin/activate
+```
+
+For Windows CMD:
+```
+.\api\Scripts\activate.bat
+```
+
+For Windows Powershell:
+```
+.\api\Scripts\activate.ps1
+```
+
+And finally install all the dependecies through:
+```
+pip install -r requirements.txt
+```
+Now you can run the main code and the API 
+
+## Running the main code
 Locate on the root folder and run:
 1. To train the model and then run the API
 ```
